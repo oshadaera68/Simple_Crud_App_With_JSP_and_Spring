@@ -68,6 +68,12 @@
       <artifactId>lombok</artifactId>
       <version>1.18.26</version>
     </dependency>
+
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+    </dependency>
   </dependencies>
   <build>
     <finalName>Basic_Crud_App</finalName>
