@@ -24,4 +24,7 @@ public class CutomerServiceImpl implements CustomerService {
         customerDao.saveCustomer(customer);
     }
 
+    public Customer findCustomer(int id) {
+        return customerDao.findCustomer(id);
+    }
 }
