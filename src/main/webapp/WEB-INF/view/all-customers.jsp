@@ -1,11 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: Hasika
-  Date: 5/28/2023
-  Time: 8:18 PM
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page isELIgnored="false" %>
 <html>
@@ -15,7 +9,10 @@
     <title>Title</title>
 </head>
 <body>
-
+<hr>
+<a href="new-customer-form" class="btn btn-submit btn-sm">
+    + New Customer</a>
+<hr>
 <div class="container">
     <h1>Customers</h1>
     <hr>

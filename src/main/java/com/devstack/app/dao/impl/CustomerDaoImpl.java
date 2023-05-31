@@ -18,9 +18,13 @@ public class CustomerDaoImpl implements CustomerDao {
     @Autowired
     private SessionFactory sessionFactory;
 
-    @Transactional
+
     public List<Customer> findAllCustomers() {
         return sessionFactory.getCurrentSession()
                 .createQuery("FROM Customer", Customer.class).getResultList();
+    }
+
+    public void saveCustomer(Customer customer) {
+        sessionFactory.getCurrentSession().save(customer);
     }
 }
