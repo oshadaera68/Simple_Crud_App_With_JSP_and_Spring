@@ -8,6 +8,9 @@
 <body>
 
 <form:form action="new-customer" modelAttribute="customer" method="post">
+
+    <form:hidden path="id"/>
+
     <div class="form-group">
         <label for="name">Customer Name</label>
         <form:input path="name" id="name"/>

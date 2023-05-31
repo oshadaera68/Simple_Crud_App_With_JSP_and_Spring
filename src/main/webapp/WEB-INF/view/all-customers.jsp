@@ -28,16 +28,21 @@
         <c:forEach var="cus" items="${customers}">
 
             <c:url var="update" value="/customers/update-ui-form">
-                <c:param name="id" value="cus.id"/>
+                <c:param name="id" value="${cus.id}"/>
+            </c:url>
+
+            <c:url var="delete" value="/customers/delete-ui-form">
+                <c:param name="id" value="${cus.id}"/>
             </c:url>
 
             <tr>
                 <td>${cus.id}</td>
                 <td>${cus.name}</td>
                 <td>${cus.salary}</td>
-
-                <a href="${update}">Update Customer</a>
-
+                <td>
+                    <a href="${update}">Update Customer</a>&nbsp; | &nbsp;
+                    <a href="${delete}">Delete Customer</a>
+                </td>
             </tr>
         </c:forEach>
         </tbody>

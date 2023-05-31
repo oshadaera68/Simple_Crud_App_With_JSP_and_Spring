@@ -40,6 +40,6 @@ public class CustomerController {
     public String updateUiForm(@RequestParam("id") int id, Model model){
         Customer customer = new Customer();
         model.addAttribute("customer",customer);
-        return "update-customer-form";
+        return "new-customer-form";
     }
 }

@@ -10,5 +10,5 @@ public interface CustomerDao {
 
     public void saveCustomer(Customer customer);
 
-    public Customer findCustomer(int id);
+    public Customer findCustomer(long id);
 }

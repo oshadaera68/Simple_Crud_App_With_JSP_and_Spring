@@ -9,5 +9,5 @@ public interface CustomerService {
 
     void saveCustomer(Customer customer);
 
-    Customer findCustomer(int id);
+    Customer findCustomer(long id);
 }

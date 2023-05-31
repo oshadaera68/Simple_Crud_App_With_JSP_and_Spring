@@ -25,10 +25,10 @@ public class CustomerDaoImpl implements CustomerDao {
     }
 
     public void saveCustomer(Customer customer) {
-        sessionFactory.getCurrentSession().save(customer);
+        sessionFactory.getCurrentSession().saveOrUpdate(customer);
     }
 
-    public Customer findCustomer(int id) {
+    public Customer findCustomer(long id) {
         return sessionFactory.getCurrentSession().find(Customer.class,id);
     }
 }
